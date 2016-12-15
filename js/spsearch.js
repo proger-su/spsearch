@@ -18,7 +18,6 @@ jQuery(document).ready(function ($) {
 					data: self.serialize(),
 					timeout: 4000
 				}).done(function (result) {
-					console.log(_this.$container);
 					if (!_this.$container) {
 						_this.$container = $('<ul></ul>').appendTo(self.parent());
 					}
@@ -28,13 +27,11 @@ jQuery(document).ready(function ($) {
 					}
 					_this.$container.html('<li>Nothing found</li>');
 				}).fail(function (jqXHR, textStatus) {
-					if (textStatus === 'timeout')
-					{
+					if (textStatus === 'timeout') {
 						alert('Failed');
 					}
 				});
 			} else {
-				console.log(_this.$container);
 				if (_this.$container) {
 					_this.$container.remove();
 					_this.$container = false;

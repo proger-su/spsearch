@@ -20,7 +20,7 @@ class spsearch {
 		//Form shortcode
 		add_shortcode('spsearch', array($this, 'addFormShortcode'));
 		add_action('spsearch', function(){
-			echo do_shortcode('[spsearch]');
+			echo $this->addFormShortcode();
 		}, 10, 0);
 
 		//Form handler
@@ -38,7 +38,7 @@ class spsearch {
 	}
 
 	public function registerSearchHandler() {
-		$s = filter_input(INPUT_GET, 's', FILTER_SANITIZE_MAGIC_QUOTES);
+		$s = filter_input(INPUT_GET, 's');
 
 		$result = new WP_Query(array(
 			's' => $s,

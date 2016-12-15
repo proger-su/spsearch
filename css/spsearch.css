@@ -12,7 +12,7 @@ and open the template in the editor.
   box-sizing: border-box; }
   .sp-ajax-search > * {
     box-sizing: border-box; }
-  .sp-ajax-search .s {
+  .sp-ajax-search .search-field {
     width: 100%; }
   .sp-ajax-search ul {
     background: #fff;

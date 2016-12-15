@@ -1,0 +1,45 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Dec 15, 2016, 9:06:10 PM
+    Author     : pererva
+*/
+
+.sp-ajax-search {
+	position: relative;
+	box-sizing: border-box;
+
+	& > * {
+		box-sizing: border-box;
+	}
+
+	.s {
+		width: 100%;
+	}
+
+	ul {
+		background: #fff;
+		list-style: none;
+		margin: 0;
+		padding: 5px;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		display: block;
+		width: 100%;
+
+		li {
+			display: block;
+			margin: 0 0 5px 0;
+
+			&:last-child {
+				margin: 0;
+			}
+
+		}
+	}
+
+}

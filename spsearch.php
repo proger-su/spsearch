@@ -18,8 +18,8 @@ class Spsearch {
 		add_action('wp_enqueue_scripts', array($this, 'addScripts'));
 
 		//Form shortcode
-		add_shortcode('spsearch', array($this, 'addFormShortcode'));
-		add_action('spsearch', function(){
+		add_shortcode('Spsearch', array($this, 'addFormShortcode'));
+		add_action('Spsearch', function(){
 			echo $this->addFormShortcode();
 		}, 10, 0);
 

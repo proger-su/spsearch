@@ -10,8 +10,8 @@
  */
 
 defined('ABSPATH') or die();
-
-class spsearch {
+/*You have to write class name with capital letter*/
+class Spsearch {
 
 	function __construct() {
 		//Scripts
